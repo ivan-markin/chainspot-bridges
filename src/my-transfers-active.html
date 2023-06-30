@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  @@include('html/head.html', {
+    "title": "Transfers"
+  })
+
+<body>
+  
+  @@include('html/mobile-menu.html', {})
+  @@include('html/filters-panel.html', {})
+  @@include('html/date-picker-popup.html', {})  
+  @@include('html/choose-token-popup.html', {})  
+  @@include('html/choose-wallet-popup.html', {})
+  @@include('html/search-popup.html', {})  
+  @@include('html/wallet-actions-popup.html', {})  
+  @@include('html/routes-popup.html', {})  
+  @@include('html/is-submited-popup.html', {}) 
+  
+  <div class="container">
+    
+    @@include('html/header.html', {
+      'className': 'header_inner'
+    })
+
+    <main class="main">
+    
+      <section class="page-header">                        
+        <div class="wrapper">
+          
+          @@include('html/transfers-tabs.html', {
+            'setup': '',
+            'my-transfers': 'active',
+            'faq': ''
+          })
+
+        </div>                     
+      </section>
+
+      <section class="page-container">
+        <div class="wrapper">
+          <div class="page-block">
+            
+            <div class="page-block__head">
+              <div class="block-tabs">
+                <a class="block-tabs__item active" href="my-transfers-active.html">
+                  Active transfers
+                  <span class="block-tabs__item-counter">6</span>
+                </a>
+                <a class="block-tabs__item" href="my-transfers-historical.html">
+                  Historical transfers
+                  <span class="block-tabs__item-counter">6</span>
+                </a>
+              </div>
+            </div>
+            
+            <div class="page-block__content">
+              <div class="transfers-table">
+                
+                <!-- Table row -->
+                <div class="transfers-table__item">
+                  <div class="transfers-table__cell transfers-table__cell_date">
+                    <span class="transfers-table__cell-title">Date</span>
+                    <span class="transfers-table__date">
+                      12.08.2022,<br>20:39:31
+                    </span>
+                  </div>
+                  <div class="transfers-table__cell">
+                    <span class="transfers-table__cell-title">From</span>
+                    <div class="transfers-table__token-block">
+                      <div class="transfers-table__token-logos">
+                        <img class="transfers-table__token-logo transfers-table__token-logo_token" src="@img/tokens-logos/token.png" alt="">
+                        <img class="transfers-table__token-logo transfers-table__token-logo_network" src="@img/tokens-logos/network.png" alt="">
+                      </div>
+                      <div class="transfers-table__token-name">
+                        <span class="transfers-table__token">8.531 МАTIC <span>≈5$</span></span>
+                        <span class="transfers-table__network">Network name</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="transfers-table__cell">
+                    <span class="transfers-table__cell-title">To</span>
+                    <div class="transfers-table__token-block">
+                      <div class="transfers-table__token-logos">
+                        <img class="transfers-table__token-logo transfers-table__token-logo_token" src="@img/tokens-logos/token.png" alt="">
+                        <img class="transfers-table__token-logo transfers-table__token-logo_network" src="@img/tokens-logos/network.png" alt="">
+                      </div>
+                      <div class="transfers-table__token-name">
+                        <span class="transfers-table__token">8.531 МАTIC <span>≈5$</span></span>
+                        <span class="transfers-table__network">Network name</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="transfers-table__cell">
+                    <span class="transfers-table__cell-title">Via</span>
+                    <div class="transfers-table__via-block">
+                      <div class="transfers-table__via-logos route-logos">
+                        <img class="route-logo" src="@img/supported/bridge-1.png" alt="">
+                        <img class="route-logo" src="@img/supported/bridge-2.png" alt="">
+                      </div>
+                      <div class="transfers-table__via-name">
+                        <span>Across Bridge,</span>
+                        <span>1Inch</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="transfers-table__cell">
+                    <span class="transfers-table__cell-title">Status</span>
+                    <span class="transfers-table__status action-required">                      
+                      Action required
+                    </span>
+                  </div>
+                  <div class="transfers-table__cell transfers-table__cell_actions">
+                    <span class="transfers-table__cell-title">Actions</span>
+                    <div class="transfers-table__actions">
+                      <button class="transfers-table__main-btn">Resume Transfer</button>
+                      <button class="transfers-table__remove-btn">
+                        <img src="@img/remove-icon.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Table row -->
+                <div class="transfers-table__item">
+                  <div class="transfers-table__cell transfers-table__cell_date">
+                    <span class="transfers-table__cell-title">Date</span>
+                    <span class="transfers-table__date">
+                      12.08.2022,<br>20:39:31
+                    </span>
+                  </div>
+                  <div class="transfers-table__cell">
+                    <span class="transfers-table__cell-title">From</span>
+                    <div class="transfers-table__token-block">
+                      <div class="transfers-table__token-logos">
+                        <img class="transfers-table__token-logo transfers-table__token-logo_token" src="@img/tokens-logos/token.png"
+                          alt="">
+                        <img class="transfers-table__token-logo transfers-table__token-logo_network"
+                          src="@img/tokens-logos/network.png" alt="">
+                      </div>
+                      <div class="transfers-table__token-name">
+                        <span class="transfers-table__token">8.531 МАTIC <span>≈5$</span></span>
+                        <span class="transfers-table__network">Network name</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="transfers-table__cell">
+                    <span class="transfers-table__cell-title">To</span>
+                    <div class="transfers-table__token-block">
+                      <div class="transfers-table__token-logos">
+                        <img class="transfers-table__token-logo transfers-table__token-logo_token" src="@img/tokens-logos/token.png"
+                          alt="">
+                        <img class="transfers-table__token-logo transfers-table__token-logo_network"
+                          src="@img/tokens-logos/network.png" alt="">
+                      </div>
+                      <div class="transfers-table__token-name">
+                        <span class="transfers-table__token">8.531 МАTIC <span>≈5$</span></span>
+                        <span class="transfers-table__network">Network name</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="transfers-table__cell">
+                    <span class="transfers-table__cell-title">Via</span>
+                    <div class="transfers-table__via-block">
+                      <div class="transfers-table__via-logos route-logos">
+                        <img class="route-logo" src="@img/supported/bridge-1.png" alt="">
+                        <img class="route-logo" src="@img/supported/bridge-2.png" alt="">
+                      </div>
+                      <div class="transfers-table__via-name">
+                        <span>Across Bridge,</span>
+                        <span>1Inch</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="transfers-table__cell">
+                    <span class="transfers-table__cell-title">Status</span>
+                    <span class="transfers-table__status success">
+                      Success
+                    </span>
+                  </div>
+                  <div class="transfers-table__cell transfers-table__cell_actions">
+                    <span class="transfers-table__cell-title">Actions</span>
+                    <div class="transfers-table__actions">
+                      <button class="transfers-table__main-btn">Resume Transfer</button>
+                      <button class="transfers-table__remove-btn">
+                        <img src="@img/remove-icon.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Table row -->
+                <div class="transfers-table__item">
+                  <div class="transfers-table__cell transfers-table__cell_date">
+                    <span class="transfers-table__cell-title">Date</span>
+                    <span class="transfers-table__date">
+                      12.08.2022,<br>20:39:31
+                    </span>
+                  </div>
+                  <div class="transfers-table__cell">
+                    <span class="transfers-table__cell-title">From</span>
+                    <div class="transfers-table__token-block">
+                      <div class="transfers-table__token-logos">
+                        <img class="transfers-table__token-logo transfers-table__token-logo_token" src="@img/tokens-logos/token.png"
+                          alt="">
+                        <img class="transfers-table__token-logo transfers-table__token-logo_network"
+                          src="@img/tokens-logos/network.png" alt="">
+                      </div>
+                      <div class="transfers-table__token-name">
+                        <span class="transfers-table__token">8.531 МАTIC <span>≈5$</span></span>
+                        <span class="transfers-table__network">Network name</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="transfers-table__cell">
+                    <span class="transfers-table__cell-title">To</span>
+                    <div class="transfers-table__token-block">
+                      <div class="transfers-table__token-logos">
+                        <img class="transfers-table__token-logo transfers-table__token-logo_token" src="@img/tokens-logos/token.png"
+                          alt="">
+                        <img class="transfers-table__token-logo transfers-table__token-logo_network"
+                          src="@img/tokens-logos/network.png" alt="">
+                      </div>
+                      <div class="transfers-table__token-name">
+                        <span class="transfers-table__token">8.531 МАTIC <span>≈5$</span></span>
+                        <span class="transfers-table__network">Network name</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="transfers-table__cell">
+                    <span class="transfers-table__cell-title">Via</span>
+                    <div class="transfers-table__via-block">
+                      <div class="transfers-table__via-logos route-logos">
+                        <img class="route-logo" src="@img/supported/bridge-1.png" alt="">
+                        <img class="route-logo" src="@img/supported/bridge-2.png" alt="">
+                      </div>
+                      <div class="transfers-table__via-name">
+                        <span>Across Bridge,</span>
+                        <span>1Inch</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="transfers-table__cell">
+                    <span class="transfers-table__cell-title">Status</span>
+                    <span class="transfers-table__status failed">
+                      Failed
+                    </span>
+                  </div>
+                  <div class="transfers-table__cell transfers-table__cell_actions">
+                    <span class="transfers-table__cell-title">Actions</span>
+                    <div class="transfers-table__actions">
+                      <button class="transfers-table__main-btn">Resume Transfer</button>
+                      <button class="transfers-table__remove-btn">
+                        <img src="@img/remove-icon.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Table row -->
+                <div class="transfers-table__item">
+                  <div class="transfers-table__cell transfers-table__cell_date">
+                    <span class="transfers-table__cell-title">Date</span>
+                    <span class="transfers-table__date">
+                      12.08.2022,<br>20:39:31
+                    </span>
+                  </div>
+                  <div class="transfers-table__cell">
+                    <span class="transfers-table__cell-title">From</span>
+                    <div class="transfers-table__token-block">
+                      <div class="transfers-table__token-logos">
+                        <img class="transfers-table__token-logo transfers-table__token-logo_token" src="@img/tokens-logos/token.png"
+                          alt="">
+                        <img class="transfers-table__token-logo transfers-table__token-logo_network"
+                          src="@img/tokens-logos/network.png" alt="">
+                      </div>
+                      <div class="transfers-table__token-name">
+                        <span class="transfers-table__token">8.531 МАTIC <span>≈5$</span></span>
+                        <span class="transfers-table__network">Network name</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="transfers-table__cell">
+                    <span class="transfers-table__cell-title">To</span>
+                    <div class="transfers-table__token-block">
+                      <div class="transfers-table__token-logos">
+                        <img class="transfers-table__token-logo transfers-table__token-logo_token" src="@img/tokens-logos/token.png"
+                          alt="">
+                        <img class="transfers-table__token-logo transfers-table__token-logo_network"
+                          src="@img/tokens-logos/network.png" alt="">
+                      </div>
+                      <div class="transfers-table__token-name">
+                        <span class="transfers-table__token">8.531 МАTIC <span>≈5$</span></span>
+                        <span class="transfers-table__network">Network name</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="transfers-table__cell">
+                    <span class="transfers-table__cell-title">Via</span>
+                    <div class="transfers-table__via-block">
+                      <div class="transfers-table__via-logos route-logos">
+                        <img class="route-logo" src="@img/supported/bridge-1.png" alt="">
+                        <img class="route-logo" src="@img/supported/bridge-2.png" alt="">
+                      </div>
+                      <div class="transfers-table__via-name">
+                        <span>Across Bridge,</span>
+                        <span>1Inch</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="transfers-table__cell">
+                    <span class="transfers-table__cell-title">Status</span>
+                    <span class="transfers-table__status action-required">
+                      Action required
+                    </span>
+                  </div>
+                  <div class="transfers-table__cell transfers-table__cell_actions">
+                    <span class="transfers-table__cell-title">Actions</span>
+                    <div class="transfers-table__actions">
+                      <button class="transfers-table__main-btn">Resume Transfer</button>
+                      <button class="transfers-table__remove-btn">
+                        <img src="@img/remove-icon.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Table row -->
+                <div class="transfers-table__item">
+                  <div class="transfers-table__cell transfers-table__cell_date">
+                    <span class="transfers-table__cell-title">Date</span>
+                    <span class="transfers-table__date">
+                      12.08.2022,<br>20:39:31
+                    </span>
+                  </div>
+                  <div class="transfers-table__cell">
+                    <span class="transfers-table__cell-title">From</span>
+                    <div class="transfers-table__token-block">
+                      <div class="transfers-table__token-logos">
+                        <img class="transfers-table__token-logo transfers-table__token-logo_token" src="@img/tokens-logos/token.png"
+                          alt="">
+                        <img class="transfers-table__token-logo transfers-table__token-logo_network"
+                          src="@img/tokens-logos/network.png" alt="">
+                      </div>
+                      <div class="transfers-table__token-name">
+                        <span class="transfers-table__token">8.531 МАTIC <span>≈5$</span></span>
+                        <span class="transfers-table__network">Network name</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="transfers-table__cell">
+                    <span class="transfers-table__cell-title">To</span>
+                    <div class="transfers-table__token-block">
+                      <div class="transfers-table__token-logos">
+                        <img class="transfers-table__token-logo transfers-table__token-logo_token" src="@img/tokens-logos/token.png"
+                          alt="">
+                        <img class="transfers-table__token-logo transfers-table__token-logo_network"
+                          src="@img/tokens-logos/network.png" alt="">
+                      </div>
+                      <div class="transfers-table__token-name">
+                        <span class="transfers-table__token">8.531 МАTIC <span>≈5$</span></span>
+                        <span class="transfers-table__network">Network name</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="transfers-table__cell">
+                    <span class="transfers-table__cell-title">Via</span>
+                    <div class="transfers-table__via-block">
+                      <div class="transfers-table__via-logos route-logos">
+                        <img class="route-logo" src="@img/supported/bridge-1.png" alt="">
+                        <img class="route-logo" src="@img/supported/bridge-2.png" alt="">
+                      </div>
+                      <div class="transfers-table__via-name">
+                        <span>Across Bridge,</span>
+                        <span>1Inch</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="transfers-table__cell">
+                    <span class="transfers-table__cell-title">Status</span>
+                    <span class="transfers-table__status action-required">
+                      Action required
+                    </span>
+                  </div>
+                  <div class="transfers-table__cell transfers-table__cell_actions">
+                    <span class="transfers-table__cell-title">Actions</span>
+                    <div class="transfers-table__actions">
+                      <button class="transfers-table__main-btn">Resume Transfer</button>
+                      <button class="transfers-table__remove-btn">
+                        <img src="@img/remove-icon.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>     
+            </div>
+
+            <div class="page-block__footer">
+              <div class="pagination">
+                <span>Page</span>
+                <input class="pagination__input" type="text" value="1">
+                <span>of 2</span>
+                <div class="pagination__buttons">
+                  <button class="pagination__button pagination__button_prev" disabled></button>
+                  <button class="pagination__button pagination__button_next"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </section>    
+    </main>
+    
+    @@include('html/footer.html', {})   
+  </div>  
+
+  <script src="./js/app.min.js"></script>
+</body>
+
+</html>

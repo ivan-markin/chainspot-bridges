@@ -1,0 +1,79 @@
+.page-tabs {
+	display: flex;
+	position: relative;
+	left: 1.67vw;
+	
+	&__item {
+		display: flex;
+		align-items: center;
+		font-size: 18px;
+		font-weight: 700;
+		color: #959CA5;
+		text-decoration: none;		
+		cursor: pointer;
+		transition: all .2s;
+		position: relative;
+		user-select: none;
+		padding: 0 10px 10px;
+
+		@media (min-width: 1920px) {
+			font-size: .94vw;
+			padding: 0 .52vw .52vw;
+		}
+		
+		@media (max-width: 1440px) {
+			font-size: 18px;
+			padding: 0 10px 10px;
+		}
+		
+		@media (max-width: 768px) {
+			font-size: 14px;			
+		}
+
+		&:hover {
+			color: var(--primary-blue);
+
+			svg {
+				fill: var(--primary-blue);
+			}
+		}
+
+		&:not(:last-of-type) {
+			margin-right: .73vw;
+
+			@media (max-width: 768px) {
+				margin-right: 4px;
+			}
+		}
+
+		svg {
+			transition: all .2s;
+			margin-right: 4px;
+		}	
+		
+		&.active {
+			color: var(--primary-blue);
+			cursor: default;
+			
+			&::after {
+				content: '';
+				display: block;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 3px;
+				border-radius: 2px 2px 0 0;
+				background-color: var(--primary-blue);
+
+				@media (max-width: 1280px) {
+					height: 2px;
+				}
+
+				@media (max-width: 768px) {
+					height: 3px;
+				}
+			}			
+		}
+	}
+}

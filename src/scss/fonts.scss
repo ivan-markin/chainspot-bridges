@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Mulish';
+  src: url('../fonts/Mulish-Regular.woff2') format('woff2'),
+       url('../fonts/Mulish-Regular.woff') format('woff'),
+       url('../fonts/Mulish-Regular.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('../fonts/Mulish-SemiBold.woff2') format('woff2'),
+       url('../fonts/Mulish-SemiBold.woff') format('woff'),
+       url('../fonts/Mulish-SemiBold.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('../fonts/Mulish-Bold.woff2') format('woff2'),
+       url('../fonts/Mulish-Bold.woff') format('woff'),
+       url('../fonts/Mulish-Bold.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('../fonts/Mulish-ExtraBold.woff2') format('woff2'),
+       url('../fonts/Mulish-ExtraBold.woff') format('woff'),
+       url('../fonts/Mulish-ExtraBold.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+       url('../fonts/Poppins-SemiBold.woff') format('woff'),
+       url('../fonts/Poppins-SemiBold.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Poppins'; 
+  src: url('../fonts/Poppins-ExtraBold.woff2') format('woff2'),
+       url('../fonts/Poppins-ExtraBold.woff') format('woff'),
+       url('../fonts/Poppins-ExtraBold.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 800;
+}

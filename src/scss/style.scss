@@ -1,0 +1,245 @@
+@import './normalize.scss';
+@import './fonts.scss';
+@import './variables';
+@import './aos/aos.scss';
+@import './swiper/swiper-bundle.scss';
+
+// Blocks
+@import './blocks/header.scss';
+@import './blocks/main-menu.scss';
+@import './blocks/hero-section.scss';
+@import './blocks/btn.scss';
+@import './blocks/primary-title.scss';
+@import './blocks/find-bridge-form.scss';
+@import './blocks/rankings.scss';
+@import './blocks/secondary-title.scss';
+@import './blocks/secondary-subtitle.scss';
+@import './blocks/filter-input.scss';
+@import './blocks/filter-switch.scss';
+@import './blocks/sort.scss';
+@import './blocks/form-network-list-popup.scss';
+@import './blocks/mobile-menu.scss';
+@import './blocks/tooltip-popup.scss';
+@import './blocks/page-title.scss';
+@import './blocks/page-header.scss';
+@import './blocks/page-tabs.scss';
+@import './blocks/page-container';
+@import './blocks/overview.scss';
+@import './blocks/select.scss';
+@import './blocks/tooltip-btn.scss';
+@import './blocks/filter-switch-block.scss';
+@import './blocks/search-input.scss';
+@import './blocks/content-tabs.scss';
+@import './blocks/content-tab.scss';
+@import './blocks/chart-section.scss';
+@import './blocks/area-chart-section.scss';
+@import './blocks/donut-chart-section.scss';
+@import './blocks/grid-block.scss';
+@import './blocks/widget.scss';
+@import './blocks/rankings-tables.scss';
+@import './blocks/rankings-table.scss';
+@import './blocks/pagination.scss';
+@import './blocks/footer.scss';
+@import './blocks/bottom-widgets.scss';
+@import './blocks/tooltip.scss';
+@import './blocks/filter-button.scss';
+@import './blocks/filters-mobile-panel.scss';
+@import './blocks/input-label.scss';
+@import './blocks/back-btn.scss';
+@import './blocks/popup-bottom.scss';
+@import './blocks/date-picker-popup.scss';
+@import './blocks/date-input.scss';
+@import './blocks/transfers.scss';
+@import './blocks/reset-button.scss';
+@import './blocks/replace-button.scss';
+@import './blocks/transfers-form.scss';
+@import './blocks/choose-token-button.scss';
+@import './blocks/max-button.scss';
+@import './blocks/filter-radio.scss';
+@import './blocks/info-button.scss';
+@import './blocks/switch.scss';
+@import './blocks/popup.scss';
+@import './blocks/choose-token-popup.scss';
+@import './blocks/tokens-list-item.scss';
+@import './blocks/collapse-button.scss';
+@import './blocks/wallet-info-button.scss';
+@import './blocks/choose-wallet-popup.scss';
+@import './blocks/text-link.scss';
+@import './blocks/copy-button.scss';
+@import './blocks/wallet-actions-popup.scss';
+@import './blocks/error-block.scss';
+@import './blocks/side-popup.scss';
+@import './blocks/routes-popup.scss';
+@import './blocks/round-checkbox.scss';
+@import './blocks/estimated-token.scss';
+@import './blocks/route-logos.scss';
+@import './blocks/filter-checkbox.scss';
+@import './blocks/search-button.scss';
+@import './blocks/search-popup.scss';
+@import './blocks/main.scss';
+@import './blocks/loader.scss';
+@import './blocks/is-submited-popup.scss';
+@import './blocks/transaction-path.scss';
+@import './blocks/page-block.scss';
+@import './blocks/block-tabs.scss';
+@import './blocks/transfers-table.scss';
+@import './blocks/transfer-approve-popup.scss';
+@import './blocks/allowance-popup.scss';
+@import './blocks/refused-popup.scss';
+@import './blocks/rejected-popup.scss';
+@import './blocks/transfer-submitted-popup.scss';
+@import './blocks/external-link.scss';
+@import './blocks/transfer-popup.scss';
+@import './blocks/refresh-button.scss';
+@import './blocks/transfers-faq.scss';
+@import './blocks/block-title.scss';
+@import './blocks/marked-list.scss';
+@import './blocks/transfers-container.scss';
+@import './blocks/transfers-wrapper.scss';
+@import './blocks/telegram-widget.scss';
+@import './blocks/swap-details.scss';
+@import './blocks/alert.scss';
+@import './blocks/token-cnt.scss';
+@import './blocks/loader-dark.scss';
+@import './blocks/loader-blue.scss';
+@import './blocks/success-message.scss';
+@import './blocks/link.scss';
+@import './blocks/faq.scss';
+@import './blocks/history.scss';
+@import './blocks/show-all-btn.scss';
+@import './blocks/copy-btn.scss';
+@import './blocks/remove-btn.scss';
+@import './blocks/delete-history-popup.scss';
+@import './blocks/switch-network-popup.scss';
+@import './blocks/popup-back-btn.scss';
+@import './blocks/loader-large.scss';
+@import './blocks/steps-list.scss';
+@import './blocks/checkbox.scss';
+@import './blocks/agreement-popup.scss';
+@import './blocks/asterizm.scss';
+@import './blocks/asterizm-wrapper.scss';
+@import './blocks/cancelled-label.scss';
+@import './blocks/pending-label.scss';
+@import './blocks/completed-label.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Mulish', 'Roboto', sans-serif;
+  color: var(--font-dark);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+
+  @media (max-width: 420px) {
+    overflow-x: hidden;
+  }
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  background: url('../img/page-bg.jpg') no-repeat center top;
+  background-size: cover;
+
+  @media (max-width: 768px) {
+    min-height: auto;
+    background: none;
+  }
+
+  &_dark {
+    background: #000212 url('../img/cnt-bg-dark.png') no-repeat center top;
+    background-size: contain;
+  }
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 40px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 420px) {
+    padding: 0 16px;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1280px;  
+  padding: 0 40px;
+  margin: 0 auto;   
+
+  @media (min-width: 1920px) {
+    max-width: 1920px;    
+  } 
+}
+
+.swiper-navigation-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 40px;
+
+  & .swiper-button-disabled {
+    opacity: 0;
+  }
+}
+
+.swiper-pagination {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.swiper-pagination-bullet:not(:last-of-type) {
+  margin-right: 6px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: -130px;
+  z-index: 9999;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position-y: center;
+
+  &::after {
+    display: none;
+  }
+}
+
+.swiper-button-prev {
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.70319 0.288997C7.31051 -0.0993633 6.67736 -0.0958652 6.289 0.296811L0.288997 6.36348C0.102492 6.55205 -0.00145817 6.807 1.52588e-05 7.07222C0.00148916 7.33745 0.108266 7.59122 0.296854 7.77771L6.29685 13.711C6.68955 14.0994 7.32271 14.0958 7.71105 13.7031C8.09938 13.3104 8.09585 12.6773 7.70315 12.289L2.41424 7.05881L7.711 1.70319C8.09936 1.31051 8.09587 0.677358 7.70319 0.288997Z' fill='%230071FF'/%3E%3C/svg%3E");
+  background-position-x: 10px;
+}
+
+.swiper-button-next {
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.296811 0.288997C0.689487 -0.0993633 1.32264 -0.0958652 1.711 0.296811L7.711 6.36348C7.89751 6.55205 8.00146 6.807 7.99998 7.07222C7.99851 7.33745 7.89173 7.59122 7.70315 7.77771L1.70315 13.711C1.31045 14.0994 0.677291 14.0958 0.288954 13.7031C-0.0993824 13.3104 -0.0958453 12.6773 0.296855 12.289L5.58576 7.05881L0.288998 1.70319C-0.0993632 1.31051 -0.0958652 0.677358 0.296811 0.288997Z' fill='%230071FF'/%3E%3C/svg%3E");
+  background-position-x: 12px;
+}
+
+
