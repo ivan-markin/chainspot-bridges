@@ -2355,7 +2355,7 @@ button.swiper-pagination-bullet {
 }
 @media (max-width: 768px) {
   .header {
-    background: url("../../img/header-bg.jpg") no-repeat center bottom;
+    background: url("../img/header-bg.jpg") no-repeat center bottom;
     background-size: cover;
     padding: 0 20px;
   }
@@ -6604,7 +6604,7 @@ button.swiper-pagination-bullet {
 .back-btn {
   width: 20px;
   height: 16px;
-  background: url("../../img/back-arrow.svg") no-repeat center;
+  background: url("../img/back-arrow.svg") no-repeat center;
   background-size: contain;
   border: none;
   cursor: pointer;
@@ -6787,7 +6787,7 @@ button.swiper-pagination-bullet {
   content: "";
   width: 17px;
   height: 130px;
-  background: url("../../img/gradient-cap.png") no-repeat center;
+  background: url("../img/gradient-cap.png") no-repeat center;
   background-size: contain;
   position: absolute;
   top: 62px;
@@ -7088,7 +7088,7 @@ button.swiper-pagination-bullet {
   display: block;
   width: 8px;
   height: 8px;
-  background: url("../../img/soft-corner-icon.svg") no-repeat left top;
+  background: url("../img/soft-corner-icon.svg") no-repeat left top;
   background-size: contain;
   position: absolute;
 }
@@ -7190,7 +7190,7 @@ button.swiper-pagination-bullet {
   display: block;
   width: 8px;
   height: 8px;
-  background: url("../../img/soft-corner-icon_white.svg") no-repeat left top;
+  background: url("../img/soft-corner-icon_white.svg") no-repeat left top;
   background-size: contain;
   position: absolute;
 }
@@ -7210,7 +7210,7 @@ button.swiper-pagination-bullet {
     left: calc(50% - 19px);
     width: 38px;
     height: 8px;
-    background: url("../../img/tab-active-mobile.svg") no-repeat center;
+    background: url("../img/tab-active-mobile.svg") no-repeat center;
   }
 }
 .transfers__tab.active::after {
@@ -7269,7 +7269,7 @@ button.swiper-pagination-bullet {
   content: "";
   width: 24px;
   height: 24px;
-  background: url("../../img/success-icon.svg") no-repeat center;
+  background: url("../img/success-icon.svg") no-repeat center;
   background-size: contain;
   -webkit-box-flex: 0;
       -ms-flex: none;
@@ -7291,7 +7291,7 @@ button.swiper-pagination-bullet {
   content: "";
   width: 24px;
   height: 24px;
-  background: url("../../img/info-message-icon.svg") no-repeat center;
+  background: url("../img/info-message-icon.svg") no-repeat center;
   background-size: contain;
   -webkit-box-flex: 0;
       -ms-flex: none;
@@ -7797,7 +7797,7 @@ button.swiper-pagination-bullet {
           transform: translateY(-50%);
 }
 .choose-token-button_dark::after {
-  background-image: url("../../img/arrow-square-down.svg");
+  background-image: url("../img/arrow-square-down.svg");
   width: 18px;
   height: 18px;
   right: 0;
@@ -8224,7 +8224,7 @@ button.swiper-pagination-bullet {
 .choose-token-popup .popup__close {
   width: 13px;
   height: 13px;
-  background: url("../../img/close-icon_black.svg") no-repeat center;
+  background: url("../img/close-icon_black.svg") no-repeat center;
   background-size: contain;
   left: auto;
   right: 20px;
@@ -11357,7 +11357,7 @@ button.swiper-pagination-bullet {
   right: 16px;
   width: 13px;
   height: 13px;
-  background: transparent url("../../img/close-icon_small.svg") no-repeat center;
+  background: transparent url("../img/close-icon_small.svg") no-repeat center;
   border: none;
   background-size: contain;
   cursor: pointer;
@@ -11668,8 +11668,8 @@ button.swiper-pagination-bullet {
   width: 300px;
   position: fixed;
   right: 20px;
-  bottom: 20px;
-  background: #FF9C19 url("../../img/alert-icon.svg") no-repeat 13px 15px;
+  top: 100px;
+  background: #FF9C19 url("../img/alert-icon.svg") no-repeat 13px 15px;
   border-radius: 12px;
   z-index: -1;
   opacity: 0;
@@ -11677,7 +11677,7 @@ button.swiper-pagination-bullet {
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
-  padding: 12px 16px 20px 52px;
+  padding: 12px 36px 20px 52px;
 }
 @media (max-width: 768px) {
   .alert {
@@ -11686,7 +11686,7 @@ button.swiper-pagination-bullet {
   }
 }
 .alert_success {
-  background: #24C38E url("../../img/success-icon_white.svg") no-repeat 13px 15px;
+  background: #24C38E url("../img/success-icon_white.svg") no-repeat 13px 15px;
 }
 .alert.active {
   z-index: 9999999;
@@ -11709,6 +11709,17 @@ button.swiper-pagination-bullet {
 }
 .alert__caption:not(:last-child) {
   margin-bottom: 8px;
+}
+.alert__close {
+  border: none;
+  width: 16px;
+  height: 16px;
+  background: url("../img/alert-close-icon.svg") no-repeat center;
+  background-size: contain;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
 }
 
 .token-cnt {
@@ -11892,7 +11903,7 @@ button.swiper-pagination-bullet {
 .loader-dark {
   width: 26px;
   height: 26px;
-  background: url("../../img/loader-rounded_dark.svg") no-repeat center;
+  background: url("../img/loader-rounded_dark.svg") no-repeat center;
   background-size: contain;
   -webkit-animation-name: rotate;
           animation-name: rotate;
@@ -11913,7 +11924,7 @@ button.swiper-pagination-bullet {
 .loader-blue {
   width: 22px;
   height: 22px;
-  background: url("../../img/loader-blue-icon.svg") no-repeat center;
+  background: url("../img/loader-blue-icon.svg") no-repeat center;
   background-size: contain;
   -webkit-animation-name: rotate;
           animation-name: rotate;
@@ -11934,7 +11945,7 @@ button.swiper-pagination-bullet {
           align-items: center;
   gap: 8px;
   border-radius: 12px;
-  background: url("../../img/success-bg.png") no-repeat center;
+  background: url("../img/success-bg.png") no-repeat center;
   background-size: cover;
   padding: 10px 10px 12px;
 }
@@ -12151,7 +12162,7 @@ button.swiper-pagination-bullet {
   width: 24px;
   height: 24px;
   border: none;
-  background: url("../../img/faq-close-icon.svg") no-repeat center;
+  background: url("../img/faq-close-icon.svg") no-repeat center;
   background-size: contain;
   cursor: pointer;
   -webkit-transition: 0.3s all;
@@ -12449,7 +12460,7 @@ button.swiper-pagination-bullet {
   content: "";
   width: 18px;
   height: 18px;
-  background: url("../../img/show-all-arrow.svg") no-repeat center;
+  background: url("../img/show-all-arrow.svg") no-repeat center;
   background-size: contain;
 }
 .show-all-btn:hover {
@@ -12459,7 +12470,7 @@ button.swiper-pagination-bullet {
 .copy-btn {
   width: 12px;
   height: 12px;
-  background: url("../../img/copy-icon.svg") no-repeat center;
+  background: url("../img/copy-icon.svg") no-repeat center;
   border: none;
   cursor: pointer;
 }
@@ -12468,7 +12479,7 @@ button.swiper-pagination-bullet {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
-  background: url("../../img/trash-icon.svg") no-repeat center;
+  background: url("../img/trash-icon.svg") no-repeat center;
   background-size: contain;
   width: 16px;
   height: 18px;
@@ -12563,7 +12574,7 @@ button.swiper-pagination-bullet {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   border: none;
-  background: url("../../img/close-icon_black.svg") no-repeat center;
+  background: url("../img/close-icon_black.svg") no-repeat center;
   background-size: contain;
   cursor: pointer;
 }
@@ -12613,7 +12624,7 @@ button.swiper-pagination-bullet {
   content: "";
   width: 5px;
   height: 8px;
-  background: url("../../img/back-arrow_blue.svg") no-repeat center;
+  background: url("../img/back-arrow_blue.svg") no-repeat center;
   background-size: contain;
 }
 
@@ -12630,7 +12641,7 @@ button.swiper-pagination-bullet {
 .loader-large {
   width: 53px;
   height: 53px;
-  background: url("../../img/loader-mobile.svg") no-repeat center;
+  background: url("../img/loader-mobile.svg") no-repeat center;
   background-size: contain;
   -webkit-animation-name: rotate;
           animation-name: rotate;
@@ -12736,7 +12747,7 @@ button.swiper-pagination-bullet {
   content: "";
   width: 12px;
   height: 10px;
-  background: url("../../img/checkbox-checked.svg") no-repeat center;
+  background: url("../img/checkbox-checked.svg") no-repeat center;
   background-size: contain;
 }
 .checkbox__input:checked + .checkbox__btn:hover {
@@ -12847,7 +12858,7 @@ button.swiper-pagination-bullet {
       -ms-flex-align: center;
           align-items: center;
   height: 187px;
-  background: url("../../img/asterizm-form-header-bg.jpg") no-repeat center;
+  background: url("../img/asterizm-form-header-bg.jpg") no-repeat center;
   background-size: cover;
   border-radius: 16px 16px 0 0;
   border: 1px solid #2C2D54;
@@ -12941,7 +12952,7 @@ button.swiper-pagination-bullet {
   content: "";
   width: 24px;
   height: 24px;
-  background: url("../../img/warning-icon_dark.svg") no-repeat center;
+  background: url("../img/warning-icon_dark.svg") no-repeat center;
   background-size: contain;
   -webkit-box-flex: 0;
       -ms-flex: none;
@@ -13013,21 +13024,21 @@ button.swiper-pagination-bullet {
 .cancelled-label {
   width: 18px;
   height: 18px;
-  background: url("../../img/rejected-icon.svg") no-repeat center;
+  background: url("../img/rejected-icon.svg") no-repeat center;
   background-size: contain;
 }
 
 .pending-label {
   width: 18px;
   height: 18px;
-  background: url("../../img/alert-icon_yellow.svg") no-repeat center;
+  background: url("../img/alert-icon_yellow.svg") no-repeat center;
   background-size: contain;
 }
 
 .completed-label {
   width: 18px;
   height: 18px;
-  background: url("../../img/completed-icon.svg") no-repeat center;
+  background: url("../img/completed-icon.svg") no-repeat center;
   background-size: contain;
 }
 
