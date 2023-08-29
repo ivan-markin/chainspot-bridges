@@ -1,0 +1,29 @@
+.claim-btn {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	height: 32px;
+	border-radius: 6px;
+	background-color: black;
+	font-size: 13px;
+	font-weight: 800;
+	color: white;
+	border: none;
+	cursor: pointer;
+	padding: 0 10px 0 8px;
+
+	&:disabled {
+		background: #AFBBC2;
+		cursor: auto;
+	}
+
+	&.tooltip-cnt:not(&:disabled) .tooltip-popup {
+		display: none;
+	}
+
+	.tooltip-popup {
+		width: 164px;
+		text-align: left;		
+		font-weight: 400;
+	}
+}

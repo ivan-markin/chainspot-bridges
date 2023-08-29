@@ -2839,6 +2839,105 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
 }
 
+.claim-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#11A97D), to(#326CAB));
+  background: -o-linear-gradient(top, #11A97D 0%, #326CAB 100%);
+  background: linear-gradient(to bottom, #11A97D 0%, #326CAB 100%);
+  border-radius: 10px;
+  position: relative;
+  color: #2D6DA1;
+  font-size: 13px;
+  font-weight: 600;
+  width: 100%;
+  padding: 6px 6px 6px 10px;
+  margin-bottom: 16px;
+}
+
+.claim-widget::before {
+  content: "";
+  border-radius: 9px;
+  background: #DFF0EE;
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  right: 1px;
+  left: 1px;
+  z-index: 1;
+}
+
+.claim-widget > * {
+  position: relative;
+  z-index: 2;
+}
+
+.claim-widget__btn {
+  margin-left: auto;
+}
+
+.claim-widget__success-icon {
+  width: 24px;
+}
+
+.claim-widget__info {
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.claim-widget__info .tooltip-popup {
+  width: 152px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.claim-widget__info .tooltip-popup ol {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.claim-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+  height: 32px;
+  border-radius: 6px;
+  background-color: black;
+  font-size: 13px;
+  font-weight: 800;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px 0 8px;
+}
+
+.claim-btn:disabled {
+  background: #AFBBC2;
+  cursor: auto;
+}
+
+.claim-btn.tooltip-cnt:not(.claim-btn:disabled) .tooltip-popup {
+  display: none;
+}
+
+.claim-btn .tooltip-popup {
+  width: 164px;
+  text-align: left;
+  font-weight: 400;
+}
+
 .header {
   -webkit-box-flex: 0;
       -ms-flex: none;
@@ -12563,8 +12662,14 @@ fieldset {
 }
 
 @media (max-width: 768px) {
+  .claim-widget {
+    width: calc(100% - 40px);
+    margin: 0 20px 20px;
+  }
+
   .no-webp .header {
     background: url("../img/header-bg.jpg") no-repeat center bottom; }
+
   .header {
     background-size: cover;
     padding: 0 20px;

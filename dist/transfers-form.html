@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <link rel="stylesheet" href="./css/style.min.css?_v=20230630194440">
+  <link rel="stylesheet" href="./css/style.min.css?_v=20230829211549">
   <title>Bridge — Transfers</title>
 </head>
 
@@ -1223,7 +1223,34 @@
         <div class="wrapper">
           <div class="transfers-wrapper">
             
-            <div class="transfers-container">			
+            <div class="transfers-container">	
+	
+	<div class="claim-widget">
+		<button class="claim-widget__info tooltip-cnt">
+			<img src="img/info-icon_blue.svg" alt="">
+			<div class="tooltip-popup">
+				<ol>
+					<li>All fees ($0.4).</li>
+					<li>Your wallet should be connected to BNB Chain.</li>
+				</ol>	
+			</div>
+		</button>		
+		
+		<!-- SUCCESS ICON -->
+		<!-- <picture><source srcset="img/claim-success-icon.webp" type="image/webp"><img class="claim-widget__success-icon" src="img/claim-success-icon.png" alt=""></picture> -->
+		
+		<span>
+			Claim 100 TCPT tokens to transfer in
+			<img src="img/venom-icon.svg" alt="">&nbsp;Venom Network			
+		</span>
+		<button class="claim-widget__btn claim-btn tooltip-cnt">
+			<img src="img/claim-btn-icon.svg" alt="">
+			Claim
+			<div class="tooltip-popup">
+				To claim the TCPT tokens,<br>switch to the BSC network
+			</div>
+		</button>
+	</div>
 	
 	<div class="transfers__tabs">
 	<a href="../transfers-form.html" class="transfers__tab active">
@@ -1259,7 +1286,7 @@
 	</a>
 </div>
 	
-	<div class="transfers">					
+	<div class="transfers">							
 		
 		<div class="transfers__content">
 	<div class="transfers__supported">
@@ -1649,13 +1676,7 @@
     </main>    
     
     
-    <div class="alert alert_success active">
-	<h3 class="alert__title">Allowance</h3>
-	<p class="alert__caption">
-		Token USDT was successfully approved. Now you can proceed to transfer.
-	</p>
-	<button class="alert__close"></button>
-</div>   
+    
     <footer class="footer @@className">
 	<div class="wrapper">
 		<div class="footer__container">
@@ -1683,7 +1704,7 @@
 </footer>   
   </div>  
 
-  <script src="./js/app.min.js?_v=20230630194440"></script>
+  <script src="./js/app.min.js?_v=20230829211549"></script>
 </body>
 
 </html>

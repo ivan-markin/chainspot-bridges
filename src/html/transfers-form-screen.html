@@ -1,4 +1,31 @@
-<div class="transfers-container">			
+<div class="transfers-container">	
+	
+	<div class="claim-widget">
+		<button class="claim-widget__info tooltip-cnt">
+			<img src="@img/info-icon_blue.svg" alt="">
+			<div class="tooltip-popup">
+				<ol>
+					<li>All fees ($0.4).</li>
+					<li>Your wallet should be connected to BNB Chain.</li>
+				</ol>	
+			</div>
+		</button>		
+		
+		<!-- SUCCESS ICON -->
+		<!-- <img class="claim-widget__success-icon" src="@img/claim-success-icon.png" alt=""> -->
+		
+		<span>
+			Claim 100 TCPT tokens to transfer in
+			<img src="@img/venom-icon.svg" alt="">&nbsp;Venom Network			
+		</span>
+		<button class="claim-widget__btn claim-btn tooltip-cnt">
+			<img src="@img/claim-btn-icon.svg" alt="">
+			Claim
+			<div class="tooltip-popup">
+				To claim the TCPT tokens,<br>switch to the BSC network
+			</div>
+		</button>
+	</div>
 	
 	@@include('transfers-tabs.html', {
 		'transfers': 'active', 
@@ -6,7 +33,7 @@
 		'faq': '', 
 	})
 	
-	<div class="transfers">					
+	<div class="transfers">							
 		
 		@@include('transfers-form.html', {})
 
