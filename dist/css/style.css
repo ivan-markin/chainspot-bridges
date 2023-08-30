@@ -3180,7 +3180,7 @@ button.swiper-pagination-bullet {
   transition: background 0.1s;
 }
 
-.connect-wallets-popup__list-item:hover::before {
+.connect-wallets-popup__list-item.connected::before {
   background: var(--primary-blue);
 }
 
