@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   color: white;
   text-decoration: none;
   border: none;
@@ -85,6 +86,16 @@
 
     &:hover {
       background: none;
+    }
+  }
+
+  &_dropdown {        
+    &.active img {
+      transform: rotate(180deg);
+    }
+
+    img {
+      transition: transform .2s;
     }
   }
 

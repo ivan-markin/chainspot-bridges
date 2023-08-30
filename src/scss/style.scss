@@ -5,12 +5,16 @@
 @import './swiper/swiper-bundle.scss';
 
 // Blocks
+@import './btn.scss';
 @import './claim-widget.scss';
 @import './claim-btn.scss';
+@import './connect-wallets-popup.scss';
+@import './connect-wallet-btn.scss';
+@import './connect-to-a-wallet-popup.scss';
+@import './disclaimer-popup.scss';
 @import './header.scss';
-@import './main-menu.scss';
 @import './hero-section.scss';
-@import './btn.scss';
+@import './main-menu.scss';
 @import './primary-title.scss';
 @import './find-bridge-form.scss';
 @import './rankings.scss';
@@ -163,6 +167,7 @@ fieldset {
   min-height: 100vh;
   background: url('../img/page-bg.jpg') no-repeat center top;
   background-size: cover;
+  overflow-x: hidden;
 
   @media (max-width: 768px) {
     min-height: auto;

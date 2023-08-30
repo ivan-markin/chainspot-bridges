@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <link rel="stylesheet" href="./css/style.min.css?_v=20230829211549">
+  <link rel="stylesheet" href="./css/style.min.css?_v=20230830161730">
   <title>Bridge — Transfers</title>
 </head>
 
@@ -1311,19 +1311,116 @@
 			</ul>
 		</nav>
 		
-		<button class="header__cta btn btn_middle connect-wallet-btn">Connect wallet</button>
-		<!-- <a class="wallet-info-button">
-			<div class="wallet-info-button__logo">
-				<picture><source srcset="img/metamask-logo.webp" type="image/webp"><img class="wallet-info-button__main-logo" src="img/metamask-logo.png" alt=""></picture>
-				<picture><source srcset="img/tokens-logos/network.webp" type="image/webp"><img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt=""></picture>
-			</div>
-			<div class="wallet-info-button__wallet-num">
-				<div>
-					<span class="wallet-info-button__num">0x07A0...B57F</span>					
+		<div class="header__cta">
+			
+			<!-- NO WALLETS CONNECTED -->
+			<!-- <button class="btn btn_dropdown btn_middle select-button">
+				Connect wallets			
+				<img src="img/dropdown-arrow_white.svg" alt="">			
+			</button>		 -->
+
+			<!-- ONE WALLET CONNECTED -->
+			<!-- <a class="wallet-info-button select-button">
+				<div class="wallet-info-button__logo">
+					<picture><source srcset="img/metamask-logo.webp" type="image/webp"><img class="wallet-info-button__main-logo" src="img/metamask-logo.png" alt=""></picture>
+					<picture><source srcset="img/tokens-logos/network.webp" type="image/webp"><img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt=""></picture>
 				</div>
-				<img src="img/wallet-icon_dark.svg" alt="">
+				<div class="wallet-info-button__wallet-num">
+					<div>
+						<span class="wallet-info-button__num">0x07A0...B57F</span>					
+					</div>
+					<img src="img/wallet-icon_dark.svg" alt="">
+				</div>
+			</a> -->
+
+			<!-- MULTIPLE WALLETS CONNECTED -->
+			<button class="wallet-info-button wallet-info-button_multiple select-button">
+				<div class="wallet-info-button__logo">
+					<picture><source srcset="img/metamask-logo.webp" type="image/webp"><img class="wallet-info-button__main-logo" src="img/metamask-logo.png" alt=""></picture>
+					<picture><source srcset="img/tokens-logos/network.webp" type="image/webp"><img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt=""></picture>
+				</div>
+				<div class="wallet-info-button__logo">
+					<picture><source srcset="img/metamask-logo.webp" type="image/webp"><img class="wallet-info-button__main-logo" src="img/metamask-logo.png" alt=""></picture>
+					<picture><source srcset="img/tokens-logos/network.webp" type="image/webp"><img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt=""></picture>
+				</div>
+				<div class="wallet-info-button__logo">
+					<picture><source srcset="img/metamask-logo.webp" type="image/webp"><img class="wallet-info-button__main-logo" src="img/metamask-logo.png" alt=""></picture>
+					<picture><source srcset="img/tokens-logos/network.webp" type="image/webp"><img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt=""></picture>
+				</div>
+				<img class="wallet-info-button__arrow" src="img/select-button-arrow_dark.svg" alt="">
+			</button>				
+			
+			<div class="connect-wallets-popup">
+	<div class="connect-wallets-popup__cnt">
+		<button class="connect-wallets-popup__close">
+			<img src="img/close-icon_black.svg" alt="">
+		</button>
+		
+		<h3 class="connect-wallets-popup__title">Select wallets</h3>
+		<span class="connect-wallets-popup__subtitle">
+			By connecting your wallet, you agree to our <a class="text-link" href="">Terms & Disclaimer</a>
+		</span>
+		
+		<div class="connect-wallets-popup__list">
+			<div class="connect-wallets-popup__list-item metamask-wallet ">
+				<span class="connect-wallets-popup__list-item-icon">
+					<picture><source srcset="img/wallets-icons/metamask.webp" type="image/webp"><img src="img/wallets-icons/metamask.png" width="16" height="16" alt=""></picture>
+				</span>
+				<span>MetaMask</span>
+				<button class="connect-wallets-popup__connect-btn">Connect wallet</button>
+			</div>			
+			<div class="connect-wallets-popup__list-item ever-wallet">
+				<span class="connect-wallets-popup__list-item-icon">
+					<img src="img/wallets-icons/ever.svg" alt="">
+				</span>
+				<span>EVER Wallet</span>
+				<button class="connect-wallets-popup__connect-btn">Connect wallet</button>
+			</div>			
+			<div class="connect-wallets-popup__list-item tron-wallet">
+				<span class="connect-wallets-popup__list-item-icon">
+					<img src="img/wallets-icons/tron.svg" alt="">
+				</span>
+				<span>TronLink</span>
+				<button class="connect-wallets-popup__connect-btn">Connect wallet</button>
 			</div>
-		</a> -->
+			<div class="connect-wallets-popup__list-item trust-wallet">
+				<span class="connect-wallets-popup__list-item-icon">
+					<img src="img/wallets-icons/trust.svg" alt="">
+				</span>
+				<span>Trust Wallet</span>
+				<button class="connect-wallets-popup__connect-btn">Connect wallet</button>
+			</div>
+			<div class="connect-wallets-popup__list-item venom-wallet">
+				<span class="connect-wallets-popup__list-item-icon">
+					<img src="img/wallets-icons/venom.svg" alt="">
+				</span>
+				<span>Venom Wallet</span>
+				<button class="connect-wallets-popup__connect-btn" disabled>
+					<span class="tooltip-cnt">
+						<img src="img/info-icon_gray.svg" alt="">
+						<div class="tooltip-popup">
+							You can only connect two wallets at a time
+						</div>
+					</span>					
+					Connect wallet
+				</button>
+			</div>
+			<div class="connect-wallets-popup__list-item wc-wallet">
+				<span class="connect-wallets-popup__list-item-icon">
+					<img src="img/wallets-icons/wallet.svg" alt="">
+				</span>
+				<span>WalletConnect</span>
+				<button class="connect-wallets-popup__connect-btn connect-wallets-popup__connect-btn_active">Disconnect</button>
+			</div>
+		</div>
+
+		<div class="connect-wallets-popup__info">
+			<img src="img/info-icon_blue.svg" alt="">
+			<span>You can only connect two wallets at a time</span>
+		</div>
+	</div>				
+</div>
+		</div>				
 	</div>      	
 </header> 
 
@@ -1544,7 +1641,7 @@
 </footer>   
   </div>  
 
-  <script src="./js/app.min.js?_v=20230829211549"></script>
+  <script src="./js/app.min.js?_v=20230830161730"></script>
 </body>
 
 </html>

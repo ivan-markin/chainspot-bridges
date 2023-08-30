@@ -18,7 +18,7 @@ const searchButton = document.querySelector('.search-button');
 const popupCloseButtons = document.querySelectorAll('.popup__close');
 const popups = document.querySelectorAll('.popup');
 const estimatedTokenBtn = document.querySelector('.estimated-token-button');
-const walletButton = document.querySelector('.wallet-info-button');
+const walletButtons = document.querySelector('.header__cta').querySelectorAll('.select-button');
 const faqItemHeaders = document.querySelectorAll('.faq__item-header');
 const deleteSwapBtn = document.querySelector('.history__remove');
 const innerPopupCloseButtons = document.querySelectorAll('.inner-popup-close');
@@ -186,10 +186,13 @@ document.addEventListener('click', (evt) => {
   console.log(evt.target);
 })  
 
-walletButton?.addEventListener('click', () => {
-  const popup = document.querySelector('#walletActionsPopup');
-  popup?.classList.add('active');
-  document.body.style.position = 'fixed';
+walletButtons.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    const popup = document.querySelector('.connect-wallets-popup');
+    e.target.closest('.select-button').classList.toggle('active');
+    popup.classList.toggle('active');
+    document.body.style.position = 'fixed';
+  })
 })
 
 faqItemHeaders.forEach(el => {

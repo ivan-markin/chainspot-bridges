@@ -45,18 +45,46 @@
 			</ul>
 		</nav>
 		
-		<button class="header__cta btn btn_middle connect-wallet-btn">Connect wallet</button>
-		<!-- <a class="wallet-info-button">
-			<div class="wallet-info-button__logo">
-				<img class="wallet-info-button__main-logo" src="@img/metamask-logo.png" alt="">
-				<img class="wallet-info-button__network-logo" src="@img/tokens-logos/network.png" alt="">
-			</div>
-			<div class="wallet-info-button__wallet-num">
-				<div>
-					<span class="wallet-info-button__num">0x07A0...B57F</span>					
+		<div class="header__cta">
+			
+			<!-- NO WALLETS CONNECTED -->
+			<!-- <button class="btn btn_dropdown btn_middle select-button">
+				Connect wallets			
+				<img src="@img/dropdown-arrow_white.svg" alt="">			
+			</button>		 -->
+
+			<!-- ONE WALLET CONNECTED -->
+			<!-- <a class="wallet-info-button select-button">
+				<div class="wallet-info-button__logo">
+					<img class="wallet-info-button__main-logo" src="@img/metamask-logo.png" alt="">
+					<img class="wallet-info-button__network-logo" src="@img/tokens-logos/network.png" alt="">
 				</div>
-				<img src="@img/wallet-icon_dark.svg" alt="">
-			</div>
-		</a> -->
+				<div class="wallet-info-button__wallet-num">
+					<div>
+						<span class="wallet-info-button__num">0x07A0...B57F</span>					
+					</div>
+					<img src="@img/wallet-icon_dark.svg" alt="">
+				</div>
+			</a> -->
+
+			<!-- MULTIPLE WALLETS CONNECTED -->
+			<button class="wallet-info-button wallet-info-button_multiple select-button">
+				<div class="wallet-info-button__logo">
+					<img class="wallet-info-button__main-logo" src="@img/metamask-logo.png" alt="">
+					<img class="wallet-info-button__network-logo" src="@img/tokens-logos/network.png" alt="">
+				</div>
+				<div class="wallet-info-button__logo">
+					<img class="wallet-info-button__main-logo" src="@img/metamask-logo.png" alt="">
+					<img class="wallet-info-button__network-logo" src="@img/tokens-logos/network.png" alt="">
+				</div>
+				<div class="wallet-info-button__logo">
+					<img class="wallet-info-button__main-logo" src="@img/metamask-logo.png" alt="">
+					<img class="wallet-info-button__network-logo" src="@img/tokens-logos/network.png" alt="">
+				</div>
+				<img class="wallet-info-button__arrow" src="@img/select-button-arrow_dark.svg" alt="">
+			</button>				
+			
+			@@include('connect-wallets-popup.html', {})
+		</div>				
 	</div>      	
 </header> 

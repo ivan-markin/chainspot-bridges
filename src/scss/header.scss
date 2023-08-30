@@ -155,6 +155,23 @@
     }
   }
 
+  &__cta {
+    position: relative;
+
+    .btn_middle {
+      min-width: 205px;
+  
+      @media (max-width: 768px) {
+        font-size: 12px;
+        font-weight: 800;
+        height: 32px;  
+        min-width: auto;
+        border-radius: 8px;
+        padding: 0 18px; 
+      }
+    }
+  }
+
   &__cta.btn_middle {
     min-width: 205px;
 
