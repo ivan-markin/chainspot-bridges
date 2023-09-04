@@ -6999,7 +6999,8 @@ button.swiper-pagination-bullet {
 
 .transfers {
   position: relative;
-  min-width: 500px;
+  max-width: 500px;
+  width: 100%;
   border-radius: 24px;
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 90px rgba(0, 0, 0, 0.1);
@@ -7557,6 +7558,11 @@ button.swiper-pagination-bullet {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.transfers__banner {
+  width: 100%;
+  margin-bottom: 4px;
 }
 
 .reset-button {
