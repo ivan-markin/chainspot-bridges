@@ -25,5 +25,18 @@
 		width: 164px;
 		text-align: left;		
 		font-weight: 400;
+
+		@media (max-width: 768px) {
+			top: 0;
+			left: 50px;
+			transform: translateX(-100%) translateY(calc(-100% - 8px));
+		}
+
+		&::after {			
+			@media (max-width: 768px) {
+				left: auto;
+				right: 12px;	
+			}			
+		}
 	}
 }
