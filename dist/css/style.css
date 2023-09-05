@@ -12534,6 +12534,7 @@ button.swiper-pagination-bullet {
   font-size: 16px;
   line-height: 1.2;
   color: #FAFAFA;
+  word-wrap: break-word;
   margin: 0;
 }
 .alert__caption:not(:last-child) {
