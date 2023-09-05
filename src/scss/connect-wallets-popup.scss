@@ -113,7 +113,8 @@
 			}
 		}
 
-		&.connected::before {
+		&.connected::before,
+		&:hover::before {
 			background: var(--primary-blue);
 		}
 

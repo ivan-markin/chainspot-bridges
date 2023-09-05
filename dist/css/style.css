@@ -2708,7 +2708,7 @@ button.swiper-pagination-bullet {
     display: none;
   }
 }
-.connect-wallets-popup__list-item.connected::before {
+.connect-wallets-popup__list-item.connected::before, .connect-wallets-popup__list-item:hover::before {
   background: var(--primary-blue);
 }
 .connect-wallets-popup__list-item_opening {
@@ -7548,8 +7548,7 @@ button.swiper-pagination-bullet {
 
 .transfers {
   position: relative;
-  max-width: 500px;
-  width: 100%;
+  min-width: 500px;
   border-radius: 24px;
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 90px rgba(0, 0, 0, 0.1);
@@ -7587,11 +7586,13 @@ button.swiper-pagination-bullet {
 }
 .transfers_proccess, .transfers_success, .transfers_warning {
   min-height: 384px;
+  max-width: 500px;
   padding: 20px 20px 50px;
 }
 @media (max-width: 768px) {
   .transfers_proccess, .transfers_success, .transfers_warning {
     width: calc(100% - 2px);
+    max-width: none;
   }
 }
 @media (max-width: 420px) {
