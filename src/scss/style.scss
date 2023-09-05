@@ -127,6 +127,7 @@
 @import './cancelled-label.scss';
 @import './pending-label.scss';
 @import './completed-label.scss';
+@import './report-us.scss';
 
 *,
 *::before,
@@ -200,6 +201,10 @@ fieldset {
   @media (min-width: 1920px) {
     max-width: 1920px;    
   } 
+
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
 }
 
 .swiper-navigation-block {

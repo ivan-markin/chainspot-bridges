@@ -36,6 +36,11 @@
 
 	&__btn {
 		margin-left: auto;
+		transition: background .2s;
+
+		&:hover {
+			background: #28254F;
+		}
 	}
 
 	&__success-icon {

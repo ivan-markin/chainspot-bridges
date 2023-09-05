@@ -2,11 +2,10 @@
 	flex: none;	
 	background-color: #142438;
 	color: #D9DBE1;
-	font-size: 14px;
-	padding: 0 3.8vw;
-	
-	@media (max-width: 768px) {
-		display: none;
+	font-size: 14px;	
+
+	@media (max-width: 948px) {
+		padding: 48px 0 90px;
 	}
 
 	&_dark {
@@ -20,6 +19,11 @@
 		justify-content: space-between;
 		height: 74px;
 		position: relative;
+
+		@media (max-width: 948px) {			
+			flex-direction: column-reverse;			
+			height: auto;
+		}
 	}
 
 	&__left,
@@ -27,30 +31,108 @@
 		display: flex;
 		align-items: center;
 	}
+
+	&__left {
+		@media (max-width: 948px) {			
+			flex-direction: column-reverse;			
+			gap: 52px;			
+		}
+	}
+
+	&__right {
+		gap: 16px;
+
+		@media (max-width: 948px) {			
+			flex-direction: column;						
+			width: 100%;
+			gap: 44px;
+			border-bottom: 1px solid rgba($color: #fff, $alpha: .2);
+			padding-bottom: 44px;
+			margin-bottom: 42px;
+		}
+	}
+
+	&__logo {
+		@media (min-width: 949px) {
+			display: none;
+		}
+	}
+
+	&__menu {
+		@media (min-width: 949px) {
+			display: none;
+		}
+		
+		& > ul {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 44px;
+		}
+
+		.main-menu__item {
+			font-size: 20px;
+			font-size: 14px;
+			margin-right: 0;
+
+			a {
+				color: white;
+			}
+
+			svg path {
+				stroke: white;
+			}
+
+			&_new::after {
+				position: absolute;
+				right: auto;
+				top: 0;
+				left: 50%;
+				transform: translate(-50%, -100%);
+				background-color: #393E51;			
+				color: white;
+				height: 17px;	
+			}
+		}		
+	}
 	
 	&__copyrights {
 		font-weight: 700;
 		margin-right: 2.5vw;
+
+		@media (max-width: 948px) {
+			font-weight: 400;
+			margin-right: 0;
+		}
 	}
 
 	&__socials {
 		display: flex;
 		align-items: center;
+		gap: 1.67vw;
+
+		@media (max-width: 948px) {
+			gap: 24px;
+		}
 
 		&-item {
 			display: flex;
 			align-items: center;
+			gap: 8px;
 			text-decoration: none;
 			color: #D9DBE1;
 
-			&:first-of-type {
-				margin-right: 1.67vw;
+			@media (max-width: 948px) {
+				font-size: 16px;
 			}
 
 			img {
 				flex: none;
 				width: 16px;
-				margin-right: 8px;
+				
+				@media (max-width: 948px) {
+					width: 24px;
+				}
 			}
 		}
 	}

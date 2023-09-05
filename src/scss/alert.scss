@@ -10,10 +10,11 @@
 	opacity: 0;
 	visibility: hidden;
 	transition: .3s all;
-	padding: 12px 36px 20px 52px;
+	padding: 12px 36px 12px 52px;
 
 	@media (max-width: 768px) {
 		width: calc(100vw - 40px);
+		top: auto;
 		bottom: 82px;
 	}
 
