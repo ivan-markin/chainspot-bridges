@@ -22,7 +22,8 @@
 	}
 
 	.tooltip-popup {
-		width: 164px;
+		min-width: 120px;
+		width: max-content;
 		text-align: left;		
 		font-weight: 400;
 

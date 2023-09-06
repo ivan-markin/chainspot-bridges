@@ -448,10 +448,9 @@
 		}
 
 		&_success {
-			display: flex;
-			align-items: flex-start;
-			gap: 6px;
-			background: #EBFFF4;			
+			background: #EBFFF4;	
+			position: relative;
+			padding: 12px 12px 12px 42px;		
 
 			&::before {
 				content: '';
@@ -459,7 +458,9 @@
 				height: 24px;
 				background: url('../img/success-icon.svg') no-repeat center;
 				background-size: contain;
-				flex: none;
+				position: absolute;
+				left: 12px;
+				top: 11px;
 			}
 		}
 

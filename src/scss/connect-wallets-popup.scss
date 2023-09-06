@@ -139,36 +139,32 @@
 		}
 	}
 
-	&__list-item-icon {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		border-radius: 50%;		
+	&__list-item-icon {			
+		flex: none;
 		width: 36px;
 		height: 36px;
+	}
 
-		.metamask-wallet & {
-			background: rgba(244, 138, 41, 0.25);
-		}
+	&__list-item-title {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
 
-		.ever-wallet & {
-			background: rgba(1, 23, 152, 0.15);
-		}
-		
-		.tron-wallet & {
-			background: rgba(183, 62, 49, 0.15);
-		}
+	&__list-item-name {
+		font-size: 16px;		
+		color: var(--font-dark);		
+		line-height: 1;
+	}
+	
+	&__list-item-num {
+		font-size: 12px;
+		font-weight: 500;
+		color: #9599AD;
+		line-height: 1;
 
-		.trust-wallet & {
-			background: rgba(51, 117, 187, 0.12);
-		}
-
-		.venom-wallet & {
-			background: rgba(27, 149, 139, 0.14);
-		}
-
-		.wc-wallet & {
-			background: rgba(59, 153, 252, 0.15);
+		@media (max-width: 768px) {
+			color: var(--primary-blue);
 		}
 	}
 

@@ -72,35 +72,47 @@
 			</button>		 -->
 
 			<!-- ONE WALLET CONNECTED -->
-			<!-- <a class="wallet-info-button select-button">
-				<div class="wallet-info-button__logo">
-					<img class="wallet-info-button__main-logo" src="img/metamask-logo.png" alt="">
+			<button class="wallet-info-button select-button">
+				<div class="wallet-info-button__logo tooltip-cnt">
+					<img class="wallet-info-button__main-logo" src="img/wallets-icons/small/metamask.png" alt="">
 					<img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt="">
+					<span class="tooltip-popup tooltip-popup_num tooltip-popup_num-small">
+						0:f49f...2188
+					</span>
 				</div>
 				<div class="wallet-info-button__wallet-num">
 					<div>
 						<span class="wallet-info-button__num">0x07A0...B57F</span>					
-					</div>
-					<img src="img/wallet-icon_dark.svg" alt="">
-				</div>
-			</a> -->
-
-			<!-- MULTIPLE WALLETS CONNECTED -->
-			<button class="wallet-info-button wallet-info-button_multiple select-button">
-				<div class="wallet-info-button__logo">
-					<img class="wallet-info-button__main-logo" src="img/metamask-logo.png" alt="">
-					<img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt="">
-				</div>
-				<div class="wallet-info-button__logo">
-					<img class="wallet-info-button__main-logo" src="img/metamask-logo.png" alt="">
-					<img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt="">
-				</div>
-				<div class="wallet-info-button__logo">
-					<img class="wallet-info-button__main-logo" src="img/metamask-logo.png" alt="">
-					<img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt="">
+					</div>										
 				</div>
 				<img class="wallet-info-button__arrow" src="img/select-button-arrow_dark.svg" alt="">
-			</button>				
+			</button>
+
+			<!-- MULTIPLE WALLETS CONNECTED -->
+			<!-- <button class="wallet-info-button wallet-info-button_multiple select-button">
+				<div class="wallet-info-button__logo tooltip-cnt">
+					<img class="wallet-info-button__main-logo" src="img/wallets-icons/small/metamask.png" alt="">
+					<img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt="">
+					<span class="tooltip-popup tooltip-popup_num tooltip-popup_num-small">
+						0:f49f...2188
+					</span>
+				</div>
+				<div class="wallet-info-button__logo tooltip-cnt">
+					<img class="wallet-info-button__main-logo" src="img/wallets-icons/small/venom-wallet.png" alt="">
+					<img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt="">
+					<span class="tooltip-popup tooltip-popup_num tooltip-popup_num-small">
+						0:f49f...2188
+					</span>
+				</div>
+				<div class="wallet-info-button__logo tooltip-cnt">
+					<img class="wallet-info-button__main-logo" src="img/wallets-icons/small/tron-wallet.png" alt="">
+					<img class="wallet-info-button__network-logo" src="img/tokens-logos/network.png" alt="">
+					<span class="tooltip-popup tooltip-popup_num tooltip-popup_num-small">
+						0:f49f...2188
+					</span>
+				</div>
+				<img class="wallet-info-button__arrow" src="img/select-button-arrow_dark.svg" alt="">
+			</button>				 -->
 			
 			<div class="connect-wallets-popup">
 	<div class="connect-wallets-popup__cnt">
@@ -114,39 +126,69 @@
 		</span>
 		
 		<div class="connect-wallets-popup__list">
-			<div class="connect-wallets-popup__list-item metamask-wallet ">
-				<span class="connect-wallets-popup__list-item-icon">
-					<img src="img/wallets-icons/metamask.png" width="16" height="16" alt="">
-				</span>
-				<span>MetaMask</span>
+			<div class="connect-wallets-popup__list-item">
+				<img class="connect-wallets-popup__list-item-icon" src="img/wallets-icons/metamask.png" alt="">
+				<div class="connect-wallets-popup__list-item-title">
+					<span class="connect-wallets-popup__list-item-name">MetaMask</span>
+					<span class="connect-wallets-popup__list-item-num tooltip-cnt">
+						0X030...f13f
+						<span class="tooltip-popup tooltip-popup_num">
+							0xC560827C6652Dd97092FC5D78ccA1ca80247c896
+						</span>
+					</span>
+				</div>				
 				<button class="connect-wallets-popup__connect-btn">Connect wallet</button>
 			</div>			
-			<div class="connect-wallets-popup__list-item ever-wallet">
-				<span class="connect-wallets-popup__list-item-icon">
-					<img src="img/wallets-icons/ever.svg" alt="">
-				</span>
-				<span>EVER Wallet</span>
+			<div class="connect-wallets-popup__list-item">
+				<img class="connect-wallets-popup__list-item-icon" src="img/wallets-icons/everwallet.png" alt="">				
+				<div class="connect-wallets-popup__list-item-title">
+					<span class="connect-wallets-popup__list-item-name">EVER Wallet</span>
+					<span class="connect-wallets-popup__list-item-num tooltip-cnt">
+						0X030...f13f
+						<span class="tooltip-popup tooltip-popup_num">
+							0xC560827C6652Dd97092FC5D78ccA1ca80247c896
+						</span>
+					</span>
+				</div>				
 				<button class="connect-wallets-popup__connect-btn">Connect wallet</button>
 			</div>			
-			<div class="connect-wallets-popup__list-item tron-wallet">
-				<span class="connect-wallets-popup__list-item-icon">
-					<img src="img/wallets-icons/tron.svg" alt="">
-				</span>
-				<span>TronLink</span>
+			<div class="connect-wallets-popup__list-item">
+				<img class="connect-wallets-popup__list-item-icon" src="img/wallets-icons/tron-wallet.png" alt="">				
+				<div class="connect-wallets-popup__list-item-title">
+					<span class="connect-wallets-popup__list-item-name">TronLink</span>
+					<span class="connect-wallets-popup__list-item-num tooltip-cnt">
+						0X030...f13f
+						<span class="tooltip-popup tooltip-popup_num">
+							0xC560827C6652Dd97092FC5D78ccA1ca80247c896
+						</span>
+					</span>
+				</div>	
 				<button class="connect-wallets-popup__connect-btn">Connect wallet</button>
 			</div>
-			<div class="connect-wallets-popup__list-item trust-wallet">
-				<span class="connect-wallets-popup__list-item-icon">
-					<img src="img/wallets-icons/trust.svg" alt="">
-				</span>
-				<span>Trust Wallet</span>
+			<div class="connect-wallets-popup__list-item">
+				<img class="connect-wallets-popup__list-item-icon" src="img/wallets-icons/trust-wallet.png" alt="">				
+				<div class="connect-wallets-popup__list-item-title">
+					<span class="connect-wallets-popup__list-item-name">Trust Wallet</span>
+					<span class="connect-wallets-popup__list-item-num tooltip-cnt">
+						0X030...f13f
+						<span class="tooltip-popup tooltip-popup_num">
+							0xC560827C6652Dd97092FC5D78ccA1ca80247c896
+						</span>
+					</span>
+				</div>	
 				<button class="connect-wallets-popup__connect-btn">Connect wallet</button>
 			</div>
-			<div class="connect-wallets-popup__list-item venom-wallet">
-				<span class="connect-wallets-popup__list-item-icon">
-					<img src="img/wallets-icons/venom.svg" alt="">
-				</span>
-				<span>Venom Wallet</span>
+			<div class="connect-wallets-popup__list-item">
+				<img class="connect-wallets-popup__list-item-icon" src="img/wallets-icons/venom-wallet.png" alt="">				
+				<div class="connect-wallets-popup__list-item-title">
+					<span class="connect-wallets-popup__list-item-name">Venom Wallet</span>
+					<span class="connect-wallets-popup__list-item-num tooltip-cnt">
+						0X030...f13f
+						<span class="tooltip-popup tooltip-popup_num">
+							0xC560827C6652Dd97092FC5D78ccA1ca80247c896
+						</span>
+					</span>
+				</div>	
 				<button class="connect-wallets-popup__connect-btn" disabled>
 					<span class="tooltip-cnt">
 						<img src="img/info-icon_gray.svg" alt="">
@@ -157,11 +199,17 @@
 					Connect wallet
 				</button>
 			</div>
-			<div class="connect-wallets-popup__list-item wc-wallet connected">
-				<span class="connect-wallets-popup__list-item-icon">
-					<img src="img/wallets-icons/wallet.svg" alt="">
-				</span>
-				<span>WalletConnect</span>
+			<div class="connect-wallets-popup__list-item connected">
+				<img class="connect-wallets-popup__list-item-icon" src="img/wallets-icons/walletConnect.png" alt="">				
+				<div class="connect-wallets-popup__list-item-title">
+					<span class="connect-wallets-popup__list-item-name">WalletConnect</span>
+					<span class="connect-wallets-popup__list-item-num tooltip-cnt">
+						0X030...f13f
+						<span class="tooltip-popup tooltip-popup_num">
+							0xC560827C6652Dd97092FC5D78ccA1ca80247c896
+						</span>
+					</span>
+				</div>	
 				<button class="connect-wallets-popup__connect-btn connect-wallets-popup__connect-btn_active">Disconnect</button>
 			</div>
 		</div>
