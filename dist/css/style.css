@@ -3651,7 +3651,8 @@ button.swiper-pagination-bullet {
 }
 
 .header__logo {
-  width: 188px;
+  width: 163px;
+  height: auto;
 }
 
 .header__menu {
@@ -13036,6 +13037,7 @@ fieldset {
 
   .header__logo {
     width: 8.6vw;
+    height: auto;
   }
 
   .page-title {
@@ -13181,6 +13183,7 @@ fieldset {
 
   .header__logo {
     width: 14.7vw;
+    height: auto;
   }
 
   .page-tabs__item.active::after {
@@ -13661,7 +13664,7 @@ fieldset {
   }
 
   .header__logo {
-    width: 123px;
+    width: 131px;
   }
 
   .header__menu {

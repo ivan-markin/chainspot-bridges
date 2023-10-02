@@ -68,18 +68,21 @@
   }
 
   &__logo {
-    width: 188px;
+    width: 163px;
+    height: auto;
 
     @media (min-width: 1920px) {
       width: 8.6vw;
+      height: auto;
     }
 
     @media (max-width: 1280px) {
       width: 14.7vw;
+      height: auto;
     }
 
     @media (max-width: 768px) {
-      width: 123px;
+      width: 131px;
     }
   }
 
