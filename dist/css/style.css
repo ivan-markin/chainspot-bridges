@@ -4014,7 +4014,7 @@ button.swiper-pagination-bullet {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2.34vw;
+  gap: 1.5vw;
   padding: 0;
   margin: 0;
 }
@@ -4108,7 +4108,7 @@ button.swiper-pagination-bullet {
 }
 
 .main-menu__item_soon::after {
-  content: "Coming soon";
+  content: "Soon";
 }
 
 .main-menu__item_new::after {
@@ -12980,10 +12980,6 @@ fieldset {
     display: none;
   }
 
-  .header__menu-button {
-    display: none;
-  }
-
   .find-bridge-form__text-input input[type=text]:focus {
     background-position: 0.9375vw center;
     background-size: 7%;
@@ -13006,6 +13002,10 @@ fieldset {
 }
 
 @media (min-width: 1025px) {
+  .header__menu-button {
+    display: none;
+  }
+
   .rankings__select#selectMobile {
     display: none;
   }
@@ -13293,6 +13293,10 @@ fieldset {
 }
 
 @media (max-width: 1024px) {
+  .header__menu {
+    display: none;
+  }
+
   .hero-section__tooltip-block {
     display: none;
   }
@@ -13665,10 +13669,6 @@ fieldset {
 
   .header__logo {
     width: 131px;
-  }
-
-  .header__menu {
-    display: none;
   }
 
   .header__search {
