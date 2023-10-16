@@ -23,6 +23,10 @@
       font-size: 12px;  
     }
 
+    &:not(.active):hover {
+      opacity: .7;
+    }
+
     &-link {
       display: flex;
       align-items: center;
@@ -30,27 +34,22 @@
       text-decoration: none;
       color: var(--font-dark);          
       white-space: nowrap;
-      transition: all .1s;  
-      
-      &:hover {
-        color: var(--primary-blue);  
-
-        svg {        
-          path {
-            stroke: var(--primary-blue);
-          }
-        }
-      }
-
-      svg {        
-        path {
-          transition: .1s all;
-        }
-      }
+      transition: all .1s;              
     }
 
     &.active &-link {      
-      color: var(--primary-blue);
+      position: relative;
+      
+      &::after {
+        content: '';
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: var(--font-dark);   
+        position: absolute;
+        bottom: -10px;
+        left: calc(50% - 2px);
+      }
     }
 
     &:not(.main-menu__item_disabled):hover &-link {
@@ -65,12 +64,15 @@
     }
 
     &_disabled {            
+        &:hover {
+          opacity: 1 !important;
+        }
 
       a {
         color: #003980;
         opacity: .25;
-        cursor: default;
-
+        cursor: default; 
+        
         &:hover {
           opacity: .25 !important;
         }
@@ -200,23 +202,19 @@
   }
 
   &.footer &__item-link {
-		color: white;
+		color: white;    
 
-    &:hover {
-      opacity: .7;
-    }
-
-		svg {
-			fill: white;
-		}
-
-		&.active::after {
-			display: none;
+		&::after {
+			background: white !important;
 		} 		
 	}
 
 	&.footer &__item {
-		&_soon::after,
+		&:not(.active):hover {
+      opacity: .7;
+    }
+    
+    &_soon::after,
 		&_new::after {
 			color: #262B40;
 			background-color: white;
