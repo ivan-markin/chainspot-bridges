@@ -1,4 +1,4 @@
-.main-menu {
+.main-menu {   
 
   & > ul {
     display: flex;
@@ -9,6 +9,13 @@
 
     @media (max-width: 1024px) {
       gap: 16px;
+    }
+  }
+
+  &.footer > ul {
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      gap: 24px;
     }
   }
 
@@ -210,7 +217,11 @@
 	}
 
 	&.footer &__item {
-		&:not(.active):hover {
+		@media (max-width: 1024px) {
+      font-size: 16px;
+    }
+    
+    &:not(.active):hover {
       opacity: .7;
     }
     
